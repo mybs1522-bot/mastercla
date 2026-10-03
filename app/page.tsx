@@ -313,7 +313,7 @@ export default function LandingPage() {
             </h1>
             
             <p className="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              For example: A local salon instantly books appointments at 2 AM, or an e-commerce store sends tracking links automatically. Easy to setup in <strong>3 simple steps</strong>. Your automation will talk like a real human and answer questions all about your products.
+              For example: A local salon instantly books appointments at 2 AM, or an e-commerce store sends tracking links automatically. Easy to setup in <strong>3 simple steps</strong>. Your bot will reply with a genuine human touch—not AI slop. It replies exactly as if you were replying yourself, making it completely non-identifiable as human or bot.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
@@ -431,7 +431,7 @@ export default function LandingPage() {
               <ul className="space-y-4">
                 {[
                   <span key="1">Connect your <ObfuscatedBrand /> securely. No coding language, just simple steps.</span>,
-                  "Train your AI to answer questions like a human about your specific products.",
+                  "Train your bot to reply as good as a human (no AI slop), making it completely non-identifiable as a bot.",
                   "Set up a 3-step automatic flow to qualify leads and capture emails.",
                   "Automatically send rich media like images, PDFs, and checkout links."
                 ].map((item, i) => (
