@@ -138,7 +138,7 @@ export default function LandingPage() {
                 <div className="bg-emerald-50 dark:bg-emerald-900/20 p-4 rounded-xl border border-emerald-100 dark:border-emerald-900/50 flex justify-between items-center">
                   <div>
                     <p className="font-bold text-emerald-800 dark:text-emerald-300">Total Due Today</p>
-                    <p className="text-sm text-emerald-600 dark:text-emerald-500">20-Minute Instant Setup</p>
+                    <p className="text-sm text-emerald-600 dark:text-emerald-500">30-Minute Instant Setup</p>
                   </div>
                   <p className="text-3xl font-black text-emerald-700 dark:text-emerald-400">$9</p>
                 </div>
@@ -172,7 +172,7 @@ export default function LandingPage() {
           AutoFlow
         </div>
         <button onClick={openCheckout} className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full font-medium transition-colors">
-          Start Immediately
+          See Tutorial
         </button>
       </nav>
 
@@ -186,20 +186,20 @@ export default function LandingPage() {
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
-              In this 20-Minute Setup, We Will Learn to <span className="text-emerald-600 dark:text-emerald-400">Create <ObfuscatedBrand /> Automation</span>
+              Create a Running <ObfuscatedBrand /> Bot in <span className="text-emerald-600 dark:text-emerald-400">Just 30 Minutes</span>
             </h1>
             
             <p className="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              For example: A local salon instantly books appointments at 2 AM, or an e-commerce store sends tracking links automatically. Easy to setup in <strong>4 simple steps</strong>. Your bot will reply with a genuine human touch—not AI slop. It replies exactly as if you were replying yourself, making it completely non-identifiable as human or bot.
+              In this 30-minute step-by-step tutorial, you'll build an AI that instantly books appointments at 2 AM or sends tracking links automatically. Easy to set up in <strong>4 simple steps</strong>. Your bot will reply with a genuine human touch—not AI slop—making it completely non-identifiable as human or bot.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
               <button onClick={openCheckout} className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 flex items-center justify-center gap-2">
-                Start The Preview <ArrowRight className="w-5 h-5" />
+                See Tutorial <ArrowRight className="w-5 h-5" />
               </button>
               <p className="text-sm text-zinc-500 font-medium flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-500" />
-                Working & replying for you in 20 mins
+                Working & replying for you in 30 mins
               </p>
             </div>
 
@@ -301,9 +301,9 @@ export default function LandingPage() {
         <section className="py-24 border-t border-zinc-200 dark:border-zinc-800">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
             <div className="flex-1 space-y-8">
-              <h2 className="text-3xl lg:text-4xl font-bold">What We Will Setup In 20 Minutes</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold">What We Will Setup In 30 Minutes</h2>
               <p className="text-lg text-zinc-600 dark:text-zinc-400">
-                We skip the fluff. This is a practical, step-by-step setup designed to get your automation live immediately.
+                We skip the fluff. This is a practical, step-by-step tutorial designed to get your automation live immediately.
               </p>
               <ul className="space-y-4">
                 {[
@@ -360,15 +360,15 @@ export default function LandingPage() {
                   <ShieldCheck className="text-emerald-500 w-8 h-8" />
                   Our Ironclad Guarantee
                 </h3>
-                <p className="text-lg font-medium">
-                  Your automation working in 20 minutes or we refund you.
-                </p>
-                <p className="text-zinc-600 dark:text-zinc-400 mt-4 leading-relaxed mb-8">
-                  Start setting up your automated sales machine right now. If it's not working for you in 20 minutes, you get your money back.
-                </p>
-                <button onClick={openCheckout} className="w-full bg-zinc-900 dark:bg-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white py-4 rounded-xl font-bold transition-colors text-lg flex justify-center items-center gap-2">
-                  Start For $9 Immediately
-                </button>
+                  <p className="text-lg font-medium">
+                    Your automation working in 30 minutes or we refund you.
+                  </p>
+                  <p className="text-zinc-600 dark:text-zinc-400 mt-4 leading-relaxed mb-8">
+                    Start setting up your automated sales machine right now. If it's not working for you in 30 minutes, you get your money back.
+                  </p>
+                  <button onClick={openCheckout} className="w-full bg-zinc-900 dark:bg-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white py-4 rounded-xl font-bold transition-colors text-lg flex justify-center items-center gap-2">
+                    See Tutorial - Only $9
+                  </button>
               </div>
             </div>
           </div>
@@ -404,7 +404,7 @@ export default function LandingPage() {
             onClick={openCheckout} 
             className="flex-1 sm:flex-none bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:-translate-y-0.5 whitespace-nowrap"
           >
-            Start Immediately
+            See Tutorial
           </button>
         </div>
       </div>

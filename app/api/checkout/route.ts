@@ -19,8 +19,8 @@ export async function POST(req: Request) {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'WhatsApp Automation Setup',
-              description: `Instant Access - 20 Minute Setup`,
+              name: 'WA Automation Setup',
+              description: `Instant Access - 30 Minute Setup`,
             },
             unit_amount: 900, // $9.00
           },
