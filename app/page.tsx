@@ -225,41 +225,70 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Business Benefits Section */}
+        {/* The Story Section */}
         <section className="py-24 border-t border-zinc-200 dark:border-zinc-800">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-3xl lg:text-4xl font-bold">How Automation Directly Increases Revenue</h2>
-            <p className="text-lg text-zinc-600 dark:text-zinc-400">
-              If you don't reply in 5 minutes, 78% of leads buy from a competitor. Your automation answers instantly 24/7, securing the sale before they look elsewhere.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {[
-              { 
-                title: "Turn Missed Messages Into Sales", 
-                desc: "Your business stays open 24/7. While you sleep, the bot answers FAQs, qualifies leads, and captures contact details instantly.", 
-                icon: Zap 
-              },
-              { 
-                title: "Automate Any Business Flow", 
-                desc: "Example: A real estate agent automatically qualifies leads by asking for their budget and location, saving 15 hours of manual texting per week.", 
-                icon: CheckCircle2 
-              },
-              { 
-                title: "Talk Like a Human", 
-                desc: "Never sound like a robot. Train the system to know everything about your product so it can answer questions naturally and intelligently, exactly like a human would.", 
-                icon: MessageCircle 
-              },
-            ].map((feature, i) => (
-              <div key={i} className="bg-white dark:bg-zinc-900 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/40 rounded-2xl flex items-center justify-center mb-6">
-                  <feature.icon className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">{feature.desc}</p>
+          <div className="max-w-4xl mx-auto space-y-20">
+            
+            {/* The Problem */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 font-bold px-4 py-2 rounded-full text-sm uppercase tracking-wider">
+                <X className="w-4 h-4" /> The Problem
               </div>
-            ))}
+              <h2 className="text-3xl lg:text-5xl font-black leading-tight">
+                You are losing sales while you sleep, and spending hours answering the same questions.
+              </h2>
+              <div className="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 space-y-4 leading-relaxed">
+                <p>
+                  Picture this: You wake up to 15 unread messages. <em>"Do you have this in stock?", "Where are you located?", "How much is this?"</em>
+                </p>
+                <p>
+                  By the time you sit down with your coffee and reply at 9 AM, <strong>80% of those leads have already bought from a competitor who answered faster.</strong>
+                </p>
+                <p>
+                  And during the day? You are constantly interrupting your actual work to manually copy-paste the same answers to different clients. It's exhausting, it doesn't scale, and it hurts your bottom line.
+                </p>
+              </div>
+            </div>
+
+            {/* The Solution */}
+            <div className="space-y-8 bg-zinc-50 dark:bg-zinc-900/50 p-8 lg:p-12 rounded-[3rem] border border-zinc-200 dark:border-zinc-800">
+              <div className="inline-flex items-center gap-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold px-4 py-2 rounded-full text-sm uppercase tracking-wider">
+                <CheckCircle2 className="w-4 h-4" /> The Solution
+              </div>
+              <h2 className="text-3xl lg:text-4xl font-black leading-tight">
+                An intelligent system that thinks, replies, and sells for you 24/7.
+              </h2>
+              <p className="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                What if you had a dedicated employee who worked 24 hours a day, instantly replied to every single message in 2 seconds, and knew exactly what to say to close the sale?
+              </p>
+              
+              <div className="grid sm:grid-cols-2 gap-6 pt-6">
+                {[
+                  { 
+                    title: "It Thinks, It Doesn't Copy-Paste", 
+                    desc: "This isn't a dumb 'Press 1 for Sales' bot. It actually reads the context of the client's message and crafts a highly specific, intelligent answer. It understands intent.", 
+                  },
+                  { 
+                    title: "True Human-Like Touch", 
+                    desc: "The responses sound incredibly natural. Your clients will genuinely believe they are texting with you or a human sales rep.", 
+                  },
+                  { 
+                    title: "Sends Rich Media (Photos/PDFs)", 
+                    desc: "If a client asks to see a product, the bot instantly sends photos, videos, pricing PDFs, or direct Stripe checkout links to capture the sale immediately.", 
+                  },
+                  { 
+                    title: "Captures the Lead Instantly", 
+                    desc: "It naturally asks for their name and email, qualifying the lead and saving their details directly to your database while you sleep.", 
+                  }
+                ].map((feature, i) => (
+                  <div key={i} className="bg-white dark:bg-zinc-950 p-6 rounded-2xl shadow-sm border border-zinc-200 dark:border-zinc-800">
+                    <h3 className="text-lg font-bold mb-2 text-emerald-700 dark:text-emerald-400">{feature.title}</h3>
+                    <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">{feature.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
 
           <div className="w-full flex justify-center mt-12 bg-zinc-100 dark:bg-zinc-900/50 rounded-[3rem] p-8 lg:p-12 overflow-hidden border border-zinc-200 dark:border-zinc-800">
