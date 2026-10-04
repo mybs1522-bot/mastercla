@@ -8,7 +8,7 @@ export async function POST(req: Request) {
     });
 
     const body = await req.json();
-    const { name, email, phone, day, time } = body;
+    const { name, email, phone } = body;
 
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
@@ -19,10 +19,10 @@ export async function POST(req: Request) {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'WhatsApp Automation Class',
-              description: `Live Class: ${day} at ${time}`,
+              name: 'WhatsApp Automation Setup',
+              description: `Instant Access - 20 Minute Setup`,
             },
-            unit_amount: 2900, // $29.00
+            unit_amount: 900, // $9.00
           },
           quantity: 1,
         },
@@ -33,8 +33,6 @@ export async function POST(req: Request) {
       metadata: {
         customer_name: name,
         customer_phone: phone,
-        class_day: day,
-        class_time: time,
       },
     });
 
